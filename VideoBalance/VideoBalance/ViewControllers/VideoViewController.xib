@@ -23,10 +23,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fua-8Y-Nfq">
-                    <rect key="frame" x="164" y="54" width="86" height="58"/>
+                    <rect key="frame" x="15" y="54" width="70" height="58"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
-                    <state key="normal" title="Close" backgroundImage="but-normal"/>
+                    <state key="normal" title="Exit" backgroundImage="but-normal"/>
                     <state key="disabled" backgroundImage="but-disabled">
                         <color key="titleColor" red="0.6125596794" green="0.79715266689999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -47,7 +47,7 @@
             <constraints>
                 <constraint firstItem="IEJ-11-taO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="B4d-hh-avP"/>
                 <constraint firstItem="IEJ-11-taO" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="LQu-bj-3bi"/>
-                <constraint firstItem="fua-8Y-Nfq" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="VRc-vU-qkS"/>
+                <constraint firstItem="fua-8Y-Nfq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="TbJ-q0-hVL"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IEJ-11-taO" secondAttribute="trailing" id="X7K-X0-zGL"/>
                 <constraint firstItem="fua-8Y-Nfq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="bpO-47-kIP"/>
             </constraints>
