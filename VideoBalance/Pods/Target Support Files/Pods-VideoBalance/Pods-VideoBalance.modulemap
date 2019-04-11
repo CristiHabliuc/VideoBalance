@@ -1,0 +1,6 @@
+framework module Pods_VideoBalance {
+  umbrella header "Pods-VideoBalance-umbrella.h"
+
+  export *
+  module * { export * }
+}

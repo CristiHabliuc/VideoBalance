@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoViewController" customModule="VideoBalance" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="fua-8Y-Nfq" id="sXQ-iw-Jo8"/>
+                <outlet property="videoContainer" destination="IEJ-11-taO" id="BSF-gd-bid"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fua-8Y-Nfq">
+                    <rect key="frame" x="164" y="54" width="86" height="58"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                    <state key="normal" title="Close" backgroundImage="but-normal"/>
+                    <state key="disabled" backgroundImage="but-disabled">
+                        <color key="titleColor" red="0.6125596794" green="0.79715266689999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="but-pressed"/>
+                    <connections>
+                        <action selector="handleCloseButtonTap:" destination="-1" eventType="touchUpInside" id="ChP-n6-kNi"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IEJ-11-taO">
+                    <rect key="frame" x="0.0" y="246" width="414" height="414"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="IEJ-11-taO" secondAttribute="height" multiplier="1:1" id="aws-4p-PVh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="IEJ-11-taO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="B4d-hh-avP"/>
+                <constraint firstItem="IEJ-11-taO" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="LQu-bj-3bi"/>
+                <constraint firstItem="fua-8Y-Nfq" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="VRc-vU-qkS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IEJ-11-taO" secondAttribute="trailing" id="X7K-X0-zGL"/>
+                <constraint firstItem="fua-8Y-Nfq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="bpO-47-kIP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="73.913043478260875" y="35.491071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="but-disabled" width="20.5" height="58"/>
+        <image name="but-normal" width="20.5" height="58"/>
+        <image name="but-pressed" width="20.5" height="58"/>
+    </resources>
+</document>
